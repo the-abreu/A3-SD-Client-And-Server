@@ -22,10 +22,16 @@ git clone https://github.com/the-abreu/A3-SD-Client-And-Server.git
 
 ## Introdução as funcionalidades do sistema
 Ao executar corretamente o arquivo do servidor e do cliente, você irá se deparar no terminal do Cliente a opção de operar como VENDEDOR ou como GERENTE. Segue abaixo o que cada um pode realizar no sistema:
+
+![menu](https://user-images.githubusercontent.com/96211934/204113855-5968d13f-75f6-49b3-a6f6-22cc49093337.png)
+
+
 <details open>
   <summary>
     <b>Vendedor</b>
   </summary>
+  
+  ![vendedor](https://user-images.githubusercontent.com/96211934/204113805-e90e2ad1-1b3d-4149-a30b-7739a51ba992.png)
 
 - Funcionalidade: A partir do código de N° 1 você poderá iniciar uma nova venda
 
@@ -36,6 +42,9 @@ Ao executar corretamente o arquivo do servidor e do cliente, você irá se depar
   <summary>
     <b>Gerente</b>
   </summary>
+  
+  ![gerente](https://user-images.githubusercontent.com/96211934/204113786-c907190d-2f69-42da-96ae-5f277d099f1e.png)
+
 
 - Funcionalidade: A partir do código de N° 1 você poderá consultar todas as vendas;
 - Funcionalidade: A partir do código de N° 2 você poderá consultar o total de vendas realizadas por um vendedor;
