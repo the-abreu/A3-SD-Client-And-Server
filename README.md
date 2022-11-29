@@ -1,4 +1,4 @@
-# (A3) Sistemas Distribuídos: Cliente e Servidor
+# (A3) Sistemas Distribuídos e Mobile: Cliente e Servidor
 
 ## Apresentação
 Esse projeto foi realizado pelos alunos da turma de Sistemas Distribuídos do turno noturno da UNIFACS (Nomes de RA's dos alunos no arquivo PDF)
