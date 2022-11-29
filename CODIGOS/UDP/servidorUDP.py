@@ -5,6 +5,46 @@
 # importando a biblioteca
 import socket
 
+class Dados():
+	codOperation = [0]
+
+	dadosFuncionarios = {}
+	dadosFuncionarios['nome'] = "RENAN"
+	dadosFuncionarios['idade'] = "21"
+	dadosFuncionarios['filial'] = "BA"
+
+	dadosFuncionarios2 = {}
+	dadosFuncionarios2['nome'] = "LEVI"
+	dadosFuncionarios2['idade'] = "19"
+	dadosFuncionarios2['filial'] = "BA"
+
+	dadosFuncionarios3 = {}
+	dadosFuncionarios3['nome'] = "BRUNO"
+	dadosFuncionarios3['idade'] = "19"
+	dadosFuncionarios3['filial'] = "SP"
+
+	dadosFuncionarios4 = {}
+	dadosFuncionarios4['nome'] = "CLEISON"
+	dadosFuncionarios4['idade'] = "19"
+	dadosFuncionarios4['filial'] = "SP"
+
+	dadosFuncionarios5 = {}
+	dadosFuncionarios5['nome'] = "LEONARDO"
+	dadosFuncionarios5['idade'] = "18"
+	dadosFuncionarios5['filial'] = "SP"
+
+	listaFuncionarios = [dadosFuncionarios, dadosFuncionarios2, dadosFuncionarios3, dadosFuncionarios4, dadosFuncionarios5]
+
+	vendasRealizadas = {}
+	vendasRealizadas['codigo'] = 0
+	vendasRealizadas['filial'] = "BA"
+	vendasRealizadas['vendedor'] = "RENAN"
+	vendasRealizadas['produto'] = "PS5"
+	vendasRealizadas['valor'] = 4000
+	vendasRealizadas['codPeriodoMes'] = '11'
+
+	historicoVendas = [vendasRealizadas]
+
 print("\nEu sou o SERVIDOR UDP!")
 
 # definindo ip e porta

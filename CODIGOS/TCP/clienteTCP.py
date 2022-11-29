@@ -62,6 +62,7 @@ cliente = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 # cliente se conectando ao servidor
 cliente.connect((HOST,PORT))
 
+#METÓDO PARA REALIZAR UMA NOVA VENDA
 def realizarVenda():
         iterator = codOperation[0] + 1
 
@@ -310,6 +311,7 @@ def realizarVenda():
             print('\nSELECIONE APENAS NUMEROS ENTRE 1 E 12 PROPORCIONAL AO MES')
             print('\nRETORNANDO AO MENU PRINCIPAL...\n')
 
+#METÓDO PARA CONSULTAR VENDA POR PERIODO DE TEMPO
 def consultarVendaPorPeriodo():
     menuPeriodo()
 
@@ -339,6 +341,7 @@ def consultarVendaPorPeriodo():
 
     print('\nRETORNANDO AO MENU PRINCIPAL...\n')   
 
+#METÓDO PARA CONSULTAR TODAS AS VENDAS
 def consultarVenda():
 
         print('\n-----------------------------------------------------------')
@@ -353,7 +356,8 @@ def consultarVenda():
         print('-----------------------------------------------------------\n')
 
         print('RETORNANDO AO MENU PRINCIPAL...\n')
-        
+
+#METÓDO PARA CONSULTAR O TOTAL DE VENDAS DE UM VENDEDOR        
 def consultarTotalVendasVendedor():
 
     nomeDoVendedor = str(input('\nINFORME O NOME DO VENDEDOR PARA RETORNAR O TOTAL DE VENDAS DO MESMO: ').upper())
@@ -402,6 +406,7 @@ def consultarTotalVendasVendedor():
         print('\n[ERRO] VENDEDOR NAO EXISTE! PROCURE POR UM DOS VENDEDORES CADASTRADOS!\n')
     menuPrincipal()
 
+#METÓDO PARA CONSULTAR O TOTAL DE VENDAS DE UMA LOJA
 def consultarTotalVendasLoja():
     menuLojas()
 
@@ -430,6 +435,7 @@ def consultarTotalVendasLoja():
 
     print('\nRETORANDO AO MENU PRINCIPAL...')
 
+#METÓDO PARA CONSULTAR O MELHOR VENDEDOR
 def consultarMelhorVendedor():
     print('\n-----------------------------------------------------------')
     print('|            TOTAL DE VENDAS DE CADA VENDEDOR             |')
@@ -488,6 +494,7 @@ def consultarMelhorVendedor():
 
     print('\nRETORNANDO AO MENU PRINCIPAL...\n')
 
+#METÓDO PARA CONSULTAR A MELHOR LOJA
 def consultarMelhorLoja():
     print('\n-----------------------------------------------------------')
     print('|              TOTAL DE VENDAS DE CADA LOJA               |')
@@ -518,6 +525,7 @@ def consultarMelhorLoja():
 
     print('\nRETORNANDO AO MENU PRINCIPAL...\n')                
 
+#METÓDO EXIBIR O MENU COM OS PRODUTOS
 def menuProdutos():
 
         print('PARA SELECIONAR UM DOS PRODUTOS, DIGITE UM DOS CODIGOS ABAIXO: ')
@@ -526,12 +534,13 @@ def menuProdutos():
         print('|                    MENU DE PRODUTOS                     |')
         print('-----------------------------------------------------------')
         print('|                                                         |')
-        print('| [1] PS5                                                 |')
-        print('| [2] XBOX                                                |')
-        print('| [3] NINTENDO SWITCH                                     |')
+        print('| [1] PS5                    (VALOR: R$ 4.000,00)         |')
+        print('| [2] XBOX                   (VALOR: R$ 3.000,00)         |')
+        print('| [3] NINTENDO SWITCH        (VALOR: R$ 1.500,00)         |')
         print('|                                                         |')
         print('-----------------------------------------------------------')
 
+#METÓDO EXIBIR O MENU COM OS PERIODOS
 def menuPeriodo():
         print('\nPARA SELECIONAR UM DOS MESES, DIGITE UM DOS CODIGOS ABAIXO: ')
 
@@ -548,6 +557,7 @@ def menuPeriodo():
         print('|                                                         |')
         print('-----------------------------------------------------------') 
 
+#METÓDO EXIBIR O MENU COM AS LOJAS
 def menuLojas():
         print('\nPARA UTILIZAR O SISTEMA ABAIXO, SELECIONE UMA DAS LOJAS: \n')
 
@@ -560,6 +570,7 @@ def menuLojas():
         print('|                                                         |')
         print('-----------------------------------------------------------')
 
+#METÓDO EXIBIR O MENU COM OS VENDEDORES DA FILIAL BA
 def menuFilialBa():
         print('\nPARA SELECIONAR UM DOS VENDEDORES, DIGITE UM DOS CODIGOS ABAIXO: \n')
 
@@ -572,6 +583,7 @@ def menuFilialBa():
         print('|                                                         |')
         print('-----------------------------------------------------------')
 
+#METÓDO EXIBIR O MENU COM OS VENDEDORES DA FILIAL SP
 def menuFilialSp():
         print('PARA SELECIONAR UM DOS VENDEDORES, DIGITE UM DOS CODIGOS ABAIXO: ')
 
@@ -585,6 +597,7 @@ def menuFilialSp():
         print('|                                                         |')
         print('-----------------------------------------------------------')
 
+#METÓDO EXIBIR O MENU DO VENDEDOR
 def menuVendedor():
         print('\nVOCÊ ESCOLHEU A OPÇÃO: [1] VENDEDOR\n')
 
@@ -611,6 +624,7 @@ def menuVendedor():
             print('\n[ERRO] SELECIONE UMAS DAS OPCOES DE 1 A 2 PARA USAR O MENU DO VENDEDOR')
             menuVendedor()
 
+#METÓDO EXIBIR O MENU DO GERENTE
 def menuGerente():
 
         print('\nVOCÊ ESCOLHEU A OPÇÃO: [2] GERENTE\n')
@@ -738,6 +752,7 @@ def menuGerente():
             print('\nSELECIONE ENTRE AS OPCOES DE 1 A 7 PARA UTILIZAR O MENU DO GERENTE')
             menuGerente()              
 
+#METÓDO CHAMAR O SUB-MENU A PARTIR DO MENU PRINCIPAL
 def subMenu():
 	mensagem = int(input('DIGITE UM NUMERO ENTRE 1 E 3 PARA UTILIZAR O MENU: '))
 
@@ -789,7 +804,8 @@ def subMenu():
 	print('ENCERRANDO O SISTEMA...\n')
 	print("ENCERRANDO CONEXAO COMO CLIENTE...\n")
 	cliente.close()
-		
+
+#METÓDO EXIBIR O MENU PRINCIPAL			
 def menuPrincipal():
     print('-----------------------------------------------------------')
     print('|                     MENU PRINCIPAL                      |')
@@ -803,27 +819,3 @@ def menuPrincipal():
     subMenu()
 
 menuPrincipal()
-
-'''
-# Aqui começa a conversa
-
-mensagem = input("Mensagem > ")
-
-while (mensagem != "fim"):
-	# Enviando mensagem ao servidor
-	#print("... Vou manda uma mensagem para o servidor")
-	cliente.sendall(mensagem.encode("utf-8"))
-
-	# Recebendo resposta do servidor
-	resposta = cliente.recv(1024)
-
-	# exibindo resposta
-	print("... >>> O servidor me respondeu:", resposta.decode("utf-8"))
-
-	# Obtendo nova mensagem do usuário
-	print("... Entrando com nova mensagem de texto para enviar")
-	mensagem = input("Mensagem > ")
-
-print("Encerrando o cliente")
-cliente.close()
-'''
