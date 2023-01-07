@@ -1,7 +1,7 @@
 # (A3) Sistemas Distribuídos e Mobile: Cliente e Servidor
 
 ## Apresentação
-Esse projeto foi realizado pelos alunos da turma de Sistemas Distribuídos do turno noturno da UNIFACS (Nomes e RA's dos alunos no arquivo PDF)
+Este projeto foi realizado para a UC (Unidade Curricular) de Sistemas Distribuídos do turno noturno da UNIFACS.
 
 ## Descrição
 Este projeto possui o propósito de realizar um sistema que possua um cliente que se comunique com o servidor, o sistema é orientado aos protocolos TCP e UDP (Neste repositório você encontrará duas pastas, uma para cada protocolo)
